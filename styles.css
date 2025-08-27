@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  background-color: #E6F0FF; /* Light blue background */
+  font-family: 'Lato', sans-serif;
+  color: #1A237E; /* Dark blue text color */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+body > header, body > main, body > footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+header, footer {
+  background-color: #1A237E; /* Dark blue background */
+  color: #E6F0FF; /* Light blue text color */
+  text-align: center;
+  padding: 1.5em;
+}
+
+header h1 {
+  margin: 0;
+  color: #E6F0FF; /* Light blue */
+  font-family: 'Anton', sans-serif;
+}
+
+nav ul {
+  padding: 0;
+  margin: 1em 0 0 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #42A5F5; /* A bright blue for links */
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: #ffffff;
+  padding: 2em;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+main h2 {
+  font-family: 'Anton', sans-serif;
+  color: #42A5F5; /* A bright blue for headings */
+}
+
+a {
+  color: #1565C0; /* A slightly darker blue for main links */
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+footer a {
+  color: #42A5F5; /* A bright blue for footer links */
+}
