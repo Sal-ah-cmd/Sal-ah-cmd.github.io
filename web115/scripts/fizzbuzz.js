@@ -34,8 +34,17 @@ document.getElementById('nameForm').addEventListener('submit', function(event) {
   
   let outputHTML = '<ul>';
   for (let i = 1; i <= limit; i++) {
-    const evenOrOdd = (i % 2 === 0) ? "even" : "odd";
-    outputHTML += `<li>${i}) Sneaky Snake - the number is ${evenOrOdd}</li>`;
+    let output = '';
+    if (i % 3 === 0 && i % 5 === 0) {
+      output = 'FizzBuzz';
+    } else if (i % 3 === 0) {
+      output = 'Fizz';
+    } else if (i % 5 === 0) {
+      output = 'Buzz';
+    } else {
+      output = i;
+    }
+    outputHTML += `<li>${output}</li>`;
   }
   outputHTML += '</ul>';
 
