@@ -15,6 +15,14 @@ body > header, body > main, body > footer {
   padding: 1em;
 }
 
+footer {
+  background-color: #2F4F4F;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 1.5em;
+}
+
+/* Corrected header to use Flexbox for proper alignment */
 header {
   display: flex;
   justify-content: space-between;
@@ -29,6 +37,7 @@ header .logo {
   margin-right: 1.5em;
 }
 
+/* Updated h1 to work with Flexbox and be more responsive */
 header h1 {
   flex: 1;
   text-align: center;
@@ -94,13 +103,6 @@ a {
 
 a:hover {
   text-decoration: none;
-}
-
-footer {
-  background-color: #2F4F4F;
-  color: #F5F5F5;
-  text-align: center;
-  padding: 1.5em;
 }
 
 footer a {
