@@ -67,7 +67,7 @@ main img {
 
 h1, h2, h3 {
   font-family: 'Anton', sans-serif;
-  color: #4CAF50;
+  color: #9fffa3;
   margin: 0;
 }
 
@@ -80,7 +80,7 @@ a:hover {
 }
 
 footer a {
-  color: #4CAF50;
+  color: #9fffa3;
 }
 
 .tagline {
@@ -89,7 +89,7 @@ footer a {
   text-align: center;
   font-size: 1.2em;
   color: #2F4F4F;
-  border: 2px dashed #4CAF50;
+  border: 2px dashed #9fffa3;
   padding: 1em;
 }
 
@@ -126,7 +126,7 @@ footer a {
 }
 
 .fizz {
-  color: #4CAF50;
+  color: #9fffa3;
   font-weight: bold;
 }
 
@@ -178,6 +178,6 @@ nav li {
 }
 
 .dropdown-content a:hover {
-  background-color: #4CAF50;
+  background-color: #9fffa3;
   color: #2F4F4F;
 }
