@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -20,7 +24,6 @@ html, body {
 .business-card {
   width: 580px; 
   height: 330px; 
-  box-sizing: border-box;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -41,10 +44,10 @@ html, body {
 
 .profile-section {
     display: flex;
-    align-items: flex-start; /* IMPORTANT: Align items to the start (top) */
+    align-items: flex-start;
     gap: 25px;
     width: 100%;
-    margin-top: -10px; /* Slight adjustment to move content up */
+    margin-top: -10px;
 }
 
 .profile-image {
@@ -53,14 +56,12 @@ html, body {
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #4b8d4d; 
-  /* Vertically align the image with the top of the text content */
   align-self: flex-start; 
 }
 
 .contact-details {
     display: flex;
     flex-direction: column;
-    /* Adjust margin to shift content slightly left */
     margin-left: 0; 
 }
 
@@ -105,12 +106,12 @@ html, body {
   align-items: center;
   font-size: 0.9em;
   font-weight: 400;
-  gap: 20px; /* Added spacing between elements */
+  gap: 20px;
 }
 
 .card-bottom .company-name {
     font-size: 1.3em;
-    font-weight: 900; /* Made company name bolder like the image */
+    font-weight: 900;
     margin: 0;
 }
 
@@ -118,7 +119,7 @@ html, body {
     margin: 0;
     flex-grow: 1;
     text-align: center;
-    font-size: 0.9em; /* Made address text slightly smaller for spacing */
+    font-size: 0.9em;
 }
 
 .card-bottom .website-link a {
@@ -126,7 +127,6 @@ html, body {
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s;
-    /* Ensuring the website link doesn't take up much space */
     white-space: nowrap; 
 }
 
