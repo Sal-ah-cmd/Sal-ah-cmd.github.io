@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6;
+  font-family: 'Lato', sans-serif;
+  overflow-y: hidden;
+}
+
+.card-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.business-card {
+  width: 580px; 
+  height: 330px; 
+  box-sizing: border-box; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+  background-color: #F5F5F5;
+}
+
+.card-top {
+  flex: 1;
+  padding: 30px 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #2F4F4F;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4b8d4d; 
+  align-self: flex-start; 
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0; 
+}
+
+.contact-details .name-heading { 
+  font-size: 1.8em;
+  font-weight: 900;
+  color: #2F4F4F; 
+  margin: 0 0 5px 0;
+  letter-spacing: 1px;
+}
+
+.contact-details .title-text {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #4b8d4d;
+}
+
+.contact-details .contact-line {
+    font-size: 0.9em;
+    margin: 3px 0;
+    line-height: 1.3;
+}
+
+.contact-details a {
+    color: #2F4F4F;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: #4b8d4d;
+}
+
+.card-bottom {
+  background-color: #4b8d4d;
+  color: #F5F5F5;
+  padding: 10px 40px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  font-weight: 400;
+  gap: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card-bottom .company-name {
+    font-size: 1.3em;
+    font-weight: 900;
+    margin: 0;
+}
+
+.card-bottom .address {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.card-bottom .website-link a {
+    color: #F5F5F5;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+    white-space: nowrap; 
+}
+
+.card-bottom .website-link a:hover {
+    color: #9fffa3;
+}
+
+@media (max-width: 650px) {
+    .business-card {
+        width: 95vw;
+        height: auto;
+    }
+
+    .card-top {
+        padding: 25px;
+    }
+
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact-details .name-heading {
+        font-size: 1.5em;
+    }
+
+    .card-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 25px;
+        gap: 5px;
+        text-align: left;
+    }
+    
+    .card-bottom .address {
+        text-align: left;
+    }
+}
