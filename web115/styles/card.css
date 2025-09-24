@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
+html, body, .business-card, .business-card * {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -20,7 +24,6 @@ html, body {
 .business-card {
   width: 580px; 
   height: 330px; 
-  box-sizing: border-box; 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
