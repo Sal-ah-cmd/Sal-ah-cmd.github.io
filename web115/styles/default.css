@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  background-color: #F5F5F5;
+  font-family: 'Lato', sans-serif;
+  color: #2F4F4F;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+body > header, body > main, body > footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+header, footer {
+  background-color: #2F4F4F;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 1.5em;
+}
+
+header .logo {
+  float: left;
+  max-width: 80px;
+  margin-right: 1.5em;
+}
+
+nav ul {
+  padding: 0;
+  margin: 1em 0 0 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #9fffa3;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: #ffffff;
+  padding: 2em;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+main img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  border-radius: 50%;
+}
+
+h1{
+  font-family: 'Anton', sans-serif;
+  color: #9fffa3;
+  margin: 0;
+}
+
+h2, h3 {
+  font-family: 'Anton', sans-serif;
+  color: #4b8d4d;
+  margin: 0;
+}
+
+a {
+  color: #008CBA;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+footer a {
+  color: #9fffa3;
+}
+
+.tagline {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2em;
+  color: #2F4F4F;
+  border: 2px dashed #9fffa3;
+  padding: 1em;
+}
+
+.color-swatch {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#fizzbuzz-output ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: monospace;
+  font-size: 1.1em;
+}
+
+.fizzbuzz-item {
+  padding: 5px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.fizzbuzz-item:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.item-number {
+  display: inline-block;
+  width: 40px;
+  color: #777;
+}
+
+.fizz {
+  color: #9fffa3;
+  font-weight: bold;
+}
+
+.buzz {
+  color: #008CBA;
+  font-weight: bold;
+}
+
+.fizzbuzz {
+  color: #8A2BE2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: -0.5em; 
+  background-color: #2F4F4F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  display: block;
+  margin: 0;
+}
+
+.dropdown-content a {
+  color: #F5F5F5;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.dropdown-content a:hover {
+  background-color: #9fffa3;
+  color: #2F4F4F;
+}
+
+#nameForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  max-width: 600px; 
+  margin: 20px auto; 
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #4b8d4d;
+  font-size: 1.2em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group-triple {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+}
+
+.input-pair {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 45%; 
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #2F4F4F;
+  color: #F5F5F5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button[type="submit"]:hover {
+  background-color: #4b8d4d;
+}
