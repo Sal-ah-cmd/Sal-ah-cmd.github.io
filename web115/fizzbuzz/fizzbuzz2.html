@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sal's Sneaky Snake — WEB115 — FizzBuzz 2</title>
+  <link rel="stylesheet" href="../styles/default.css">
+  <link rel="icon" type="image/x-icon" href="images/snake_favicon.png">
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+  <main>
+    <h2>FizzBuzz 2</h2>
+    <h3 id="greeting">Welcome to Sal's Sneaky Snake!</h3>
+    <form id="nameForm">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" placeholder="Enter your first name" required>
+      <label for="middle_initial">Middle Initial:</label>
+      <input type="text" id="middle_initial" placeholder="M" maxlength="1">
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" placeholder="Enter your last name" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="message-box"></div>
+    <div id="fizzbuzz-output"></div>
+  </main>
+  <div data-include="components/footer.html"></div>
+  <script src="../scripts/HTMLInclude.js"></script>
+  <script src="../scripts/fizzbuzz/fizzbuzz2.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sal's Sneaky Snake — WEB115 — FizzBuzz 4</title>
+  <link rel="stylesheet" href="../styles/default.css">
+  <link rel="icon" type="image/x-icon" href="images/snake_favicon.png">
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+  <main>
+    <h2>FizzBuzz 4</h2>
+    <h3 id="greeting">Welcome to Sal's Sneaky Snake!</h3>
+    <form id="nameForm">
+      <fieldset>
+        <legend>FizzBuzz</legend>
+        
+        <div class="form-group">
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" placeholder="Enter your first name" required>
+        </div>
+        <div class="form-group">
+          <label for="middle_initial">Middle Initial:</label>
+          <input type="text" id="middle_initial" placeholder="M" maxlength="1">
+        </div>
+        <div class="form-group">
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" placeholder="Enter your last name" required>
+        </div>
+        
+        <div class="form-group-triple">
+          <div class="input-pair">
+            <label for="word1">Word 1:</label>
+            <input type="text" id="word1" value="Sneaky" required>
+          </div>
+          <div class="input-pair">
+            <label for="divisor1">Divisor 1:</label>
+            <input type="number" id="divisor1" value="3" required>
+          </div>
+        </div>
+        <div class="form-group-triple">
+          <div class="input-pair">
+            <label for="word2">Word 2:</label>
+            <input type="text" id="word2" value="Snake" required>
+          </div>
+          <div class="input-pair">
+            <label for="divisor2">Divisor 2:</label>
+            <input type="number" id="divisor2" value="5" required>
+          </div>
+        </div>
+        <div class="form-group-triple">
+          <div class="input-pair">
+            <label for="word3">Word 3:</label>
+            <input type="text" id="word3" value="HISS!" required>
+          </div>
+          <div class="input-pair">
+            <label for="divisor3">Divisor 3:</label>
+            <input type="number" id="divisor3" value="7" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="total_count">Total Count:</label>
+          <input type="number" id="total_count" value="125" required>
+        </div>
+      </fieldset>
+      
+      <button type="submit">Start FizzBuzz</button>
+    </form>
+    <div id="message-box"></div>
+    <div id="fizzbuzz-output"></div>
+  </main>
+  <div data-include="components/footer.html"></div>
+  <script src="../scripts/HTMLInclude.js"></script>
+  <script src="../scripts/fizzbuzz/fizzbuzz4.js"></script>
+</body>
+</html>
