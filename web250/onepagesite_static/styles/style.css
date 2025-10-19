@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  background-color: #333333; 
+  font-family: 'Lato', sans-serif;
+  color: #ffffff; 
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.top, .site-footer, section .boxed, .intro-section {
+  width: 100%;
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1100px) {
+  .top, .site-footer, section .boxed, .intro-section {
+    width: calc(100% - 80px);
+  }
+}
+
+.top {
+    background-color: #333333;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #FF8C00;
+}
+
+.top__left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.top__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.top .links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.site-footer {
+  background-color: #333333; 
+  color: #333333; 
+  text-align: center;
+  padding: 1.5em;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 0.9rem;
+  flex-wrap: wrap; 
+  gap: 15px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-footer p {
+  margin: 0;
+}
+
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  color: #FF8C00; 
+  margin: 0;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 400;
+}
+h2, h3 {
+  font-family: 'Anton', sans-serif;
+  color: #FF8C00; 
+}
+h2 {
+  font-size: 2rem; 
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 1.25rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.top a {
+  text-decoration: none;
+  color: #FF8C00; 
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.2s ease-in;
+}
+
+.top a:hover {
+  color: #FF4500;
+}
+
+a {
+  color: #FF8C00; 
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+a:hover {
+  color: #FF4500;
+  text-decoration: underline;
+}
+
+.site-footer a {
+  color: #FFA500; 
+  text-decoration: underline;
+}
+.site-footer a:hover {
+  color: #FF8C00;
+}
+
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bg-alt {
+  background-color: #292929; 
+}
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.intro-image {
+  width: 100%;
+  max-width: 200px;
+}
+.intro-image img {
+  width: 100%;
+  border-radius: 50%; 
+}
+
+.title2 {
+  display: block;
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #FF8C00; 
+}
+
+
+fieldset {
+  border: 2px solid #FF8C00;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+legend {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+  color: #FF4500;
+  padding: 0 10px;
+}
+
+.form-group, .form-group-triple {
+  margin-bottom: 10px; 
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .form-group {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.form-group-triple {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+.input-pair {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+input[type="text"],
+input[type="number"] {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1.5px solid #FF8C00;
+  padding: 6px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #FF8C00;
+  color: #ffffff;
+  padding: 12px;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  width: 100%; 
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF4500;
+}
+
+#fizzbuzz-output {
+  margin-top: 20px;
+  padding: 0; 
+  background-color: #333333; 
+  border-radius: 8px;
+  color: #313030; 
+  font-family: monospace; 
+  font-size: 1.1em;
+}
+
+#fizzbuzz-output ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fizzbuzz-item {
+  padding: 5px 10px;
+  border-bottom: 1px solid #2f2f2f;
+}
+.fizzbuzz-item:nth-child(odd) {
+  background-color: #313030;
+}
+.item-number {
+  display: inline-block;
+  width: 40px; 
+  color: #777;
+}
+
+.fizz {
+  color: #FF8C00; /* Dark Orange */
+  font-weight: bold;
+}
+.buzz {
+  color: #FF4500; /* Red-Orange */
+  font-weight: bold;
+}
+.bang {
+  color: #ff0000; /* Dark Red */
+  font-weight: bold;
+}
+.fizzbuzz {
+  color: #8B0000; 
+  font-weight: bold;
+  text-transform: uppercase;
+}
