@@ -2,14 +2,14 @@ document.addEventListener("DOMContentLoaded", function() {
   const cacheBuster = "?v=" + new Date().getTime(); 
   const PageBaseUrl = "https://sal-ah-cmdgithubio.42web.io/";
 
-  fetch('components/header.html' + cacheBuster)
+  fetch('components/header.php' + cacheBuster)
     .then((response) => (response.text())) 
     .then((data) => {
       document.querySelector("header").innerHTML = data;
     })
     .catch((error) => console.error('Error loading the header:', error)); 
 
-  fetch('components/footer.html' + cacheBuster)
+  fetch('components/footer.php' + cacheBuster)
     .then((response) => (response.text())) 
     .then((data) => {
       document.querySelector("footer").innerHTML = data;
