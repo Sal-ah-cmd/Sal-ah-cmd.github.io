@@ -1,0 +1,16 @@
+<footer>
+  <p>
+    <a href="https://github.com/Sal-ah-cmd" target="_blank">GitHub</a> ✦
+    <a href="https://Sal-ah-cmd.github.io" target="_blank">GitHub.io</a> ✦
+    <a href="https://Sal-ah-cmd.github.io/web215" target="_blank">WEB215</a> ✦
+    <a href="https://www.freecodecamp.org/Sal12345" target="_blank">freeCodeCamp</a> ✦
+    <a href="https://www.codecademy.com/profiles/Sal124124123" target="_blank">Codecademy</a> ✦
+    <a href="https://jsfiddle.net/u/Salah12345/fiddles/" target="_blank">JSFiddle</a>
+  </p>
+  <p>
+    <a id="html-validator" href="#" target="_blank">HTML Validator</a> ✦
+    <a id="css-validator" href="#" target="_blank">CSS Validator</a>
+  </p>
+  <p>Page built by Sal's Sneaky Snake.</p>
+  <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
+</footer>
