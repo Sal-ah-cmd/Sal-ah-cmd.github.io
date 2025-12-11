@@ -24,7 +24,7 @@ header, footer {
 
 h1 { 
   margin: 0;
-  color: #ff4b87;
+  color: #ff0022;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -43,7 +43,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #ff4b87;
+  color: #ff0022;
   font-weight: bold;
   font-size: 1.1em;
 }
@@ -69,11 +69,11 @@ main img {
 
 h2, h3 { 
   font-family: 'Roboto', sans-serif; 
-  color: #ff4b87;
+  color: #ff0022;
 }
 
 a {
-  color: #ff4b87;
+  color: #ff0022;
 }
 
 a:hover {
@@ -81,7 +81,7 @@ a:hover {
 }
 
 footer a {
-  color: #ff4b87;
+  color: #ff0022;
 }
 
 .dropdown .dropdown-content {
@@ -107,7 +107,7 @@ footer a {
 }
 
 .dropdown-content a {
-  color: #ff4b87;
+  color: #ff0022;
   padding: 12px 16px;
   display: block;
   text-decoration: none;
@@ -115,6 +115,6 @@ footer a {
 }
 
 .dropdown-content a:hover {
-  background-color: #ff4b87;
+  background-color: #ff0022;
   color: #2F4F4F;
 }
