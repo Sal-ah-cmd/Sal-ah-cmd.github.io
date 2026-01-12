@@ -1,0 +1,39 @@
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img {
+    float: left;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+section p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
